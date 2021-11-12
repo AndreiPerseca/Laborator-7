@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="cuprins.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<h1>Catalog grupa 2111</h1>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="andrei.jpg" style="width:100%">
+  <div class="text">
+    <a href="Siteandrei.html">Perseca Andrei</a>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="radu.jpg" style="width:100%">
+  <div class="text">
+  <a href="Siteradu.html">Simea Radu</a>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="oprita.jpg" style="width:100%">
+   <div class="text">
+  <a href="Oprita.html">Oprita Alexandru</a>
+  </div>
+</div>
+<div class="mySlides fade">
+  <img src="20211016_152918.jpg" style="width:100%">
+   <div class="text">
+  <a href="Sitevictor.html">Robu Victor</a>
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+
+</body>
+</html> 
